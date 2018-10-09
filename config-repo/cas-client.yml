@@ -1,0 +1,61 @@
+server:
+  port: 9091
+
+logging:
+  config: classpath:logback-spring.xml
+  level: debug
+
+# CAS服务地址
+cas:
+  server:
+    url: http://localhost:8080/cas
+    # CAS服务登录地址
+    login_url: ${cas.server.url}/login
+    # CAS服务登出地址
+    logout_url: ${cas.server.url}/logout?service=${app.url}
+
+# 应用访问地址
+app:
+  url: http://172.20.226.65:9091
+  # 应用登录地址
+  login_url: /login
+  # 应用登出地址
+  logout_url: /logout
+
+eureka:
+  instance:
+    health-check-url-path: ${management.context-path}/health
+    status-page-url-path: ${management.context-path}/info
+    metadata-map:
+      management.context-path: ${management.context-path}
+
+management:
+  security:
+    enabled: false
+  context-path: /mgmt
+
+spring:
+  datasource:
+    url: jdbc:mysql://mysql:3306/sdgm
+    username: '{cipher}AQB28HymFp2NYxLo1RV55Ze/2tBlTELzn6ojakPUbkupLMeqqxg0yyxFtYHUo6WTKGoAxUATyrRoV+RRvayJyY87Y4NykQLvHNWsN/Tj77PfbWl6L1hn3KrOMDilD5zqibNYC4EOTOnyCSqhKg9JbzfWJ8Kq/SYomRKHUmIbKVKTMVe95s0gBMPJPiv8DdwzeZtwWKVDIRVEoSIDJdEJ+3avWS2RrTZgVIG56JH3bCQxZywJQAoTV7CK5Fz0KlfYUzXadWnug1iE7O8p+qbiu8nxfx1XyhwAY19Sby6ETdlBBKion4D0xy829Sp3byEJ7GG3yKEYaNapV7xRnJGyG8uecPGr70yCbUGiHhe73qEdhMiYoP6zXhBUJaahQ3jpmMI='
+    password: '{cipher}AQB28HymFp2NYxLo1RV55Ze/2tBlTELzn6ojakPUbkupLMeqqxg0yyxFtYHUo6WTKGoAxUATyrRoV+RRvayJyY87Y4NykQLvHNWsN/Tj77PfbWl6L1hn3KrOMDilD5zqibNYC4EOTOnyCSqhKg9JbzfWJ8Kq/SYomRKHUmIbKVKTMVe95s0gBMPJPiv8DdwzeZtwWKVDIRVEoSIDJdEJ+3avWS2RrTZgVIG56JH3bCQxZywJQAoTV7CK5Fz0KlfYUzXadWnug1iE7O8p+qbiu8nxfx1XyhwAY19Sby6ETdlBBKion4D0xy829Sp3byEJ7GG3yKEYaNapV7xRnJGyG8uecPGr70yCbUGiHhe73qEdhMiYoP6zXhBUJaahQ3jpmMI='
+  redis:
+      host: localhost
+      port: 6379
+
+token:
+  v: bearer 849a8e47-5b49-491a-a306-c1a2838db2b8
+
+security:
+#  user:
+#    name: tom
+#    password: tom
+  oauth2:
+    client:
+      clientId: svca-service
+      clientSecret: password
+      accessTokenUri: http://${auth-client-server.hostname}:${auth-client-server.port}${auth-client-server.contextPath}/oauth/token
+      grant-type: client_credentials
+      scope: server
+    resource:
+      user-info-uri: http://${auth-client-server.hostname}:${auth-client-server.port}${auth-client-server.contextPath}/current
