@@ -16,7 +16,7 @@ management:
 
 spring:
   datasource:
-    url: jdbc:123.233.240.221://mysql:3306/sdgm
+    url: jdbc:mysql://123.233.240.221://mysql:3306/sdgm
     username: root
     password: YFZXchy6629!@#123
 #  datasource:
