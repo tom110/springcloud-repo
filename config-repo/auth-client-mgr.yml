@@ -21,7 +21,7 @@ spring:
   datasource:
     url: jdbc:mysql://123.233.240.221:3306/sdgm
     username: root
-    password: root
+    password: YFZXchy6629!@#123
 security:
 #设置自动授权
 #  user:
