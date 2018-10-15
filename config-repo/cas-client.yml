@@ -44,7 +44,7 @@ spring:
       port: 6379
 
 token:
-  v: bearer 849a8e47-5b49-491a-a306-c1a2838db2b8
+  v: bearer 4830c2f5-4d08-44c2-8c04-68f7578ea4dd
 
 security:
 #  user:
