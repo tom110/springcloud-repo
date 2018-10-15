@@ -20,7 +20,7 @@ management:
 spring:
   datasource:
     url: jdbc:mysql://mysql:3306/sdgm
-    username: '{cipher}AQAhRSXC1qZocHbzv06FVRhGij4qQVMu4Q6cmFlmwT6NPvJS0kBNB9TPH8EoRR0+/0k/J2SrMnwjoh+mwMLv8wrjwoCgDwjXnver1Km+Ow1ewCYScWVj/Y5YBTrUB4Jdz8sUa1Y4zKHkgVf1he96Duck3bmsjAfbn7g3XZOY4duqQvRrP8d0Jzc6XFnAX4y+Glpqor0B3fxoyJmDS/8I8lKgXvXuoxM3DO3Aa3OLA+bFSdzoE2Im3GXRZeZnpgXXg8CeWhKsu5ml5wVsN9nyRDNYVd1ioJSXLO91okF1hT5yWwLp2Z1fXBXJoJPWlB8MJtsNQcNAoTRfIEp2wcjBCficpV/MZmvSbV86yT+yY8D/cMf+Hgh7bxCCbJvOPOnQaHo='
+    username: sdgm
     password: '{cipher}AQBNAoDcjo8qdvadm2A5+RM0Dx07UW2hxu9DrG8SqHdzeM/P11EcZw3ygs0q/o3zyFvyfooKc9gp/HsMkcKW1MCcxtv7mCERld0RWfP+pep6ibyIhaUXQuYWGWHyFmc6jS9GLDkRXwdvCIzXztdIAqxafgZ6ikrLRjSKmAVI0d7AH3AGAhDkLEihoU/EMWKkJOfLUhsDRW+p2BfQ0JxMF1lL1xsmqLhWorsRzo7IIbDPi3lKNKuSloXy54uq3MqmW/B/zr3aoI35O0bqcn3JzqmkQAx6wGfRfW9dj12Kw+X2m9yBEmx6p3DqM+kk+9jUeLbw9p3PAJQg6qnSY27t1RB/S4yi0L+7xkQ8lZf88WMc8GJI6qjUgsHtqsyHKu0rsdtZlZJumkoUkItMrZI7sqVc'
 security:
 #设置自动授权
