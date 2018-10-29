@@ -1,11 +1,11 @@
 eureka:
   instance:
-    hostname: 123.233.240.221
+    hostname: registry
 #    使用主机名发现
     prefer-ip-address: false
   client:
     service-url:
-      defaultZone: http://user:${REGISTRY_SERVER_PASSWORD:password}@123.233.240.221:8761/eureka/
+      defaultZone: http://user:${REGISTRY_SERVER_PASSWORD:password}@registry:8761/eureka/
 
 hystrix:
   command:
