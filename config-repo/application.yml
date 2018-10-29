@@ -1,14 +1,14 @@
-eureka:
-  instance:
-    hostname: registry
-#    使用主机名发现
-    prefer-ip-address: false
-    metadata-map:
-      user.name: user
-      user.password: password
-  client:
-    service-url:
-      defaultZone: http://user:${REGISTRY_SERVER_PASSWORD:password}@registry:8761/eureka/
+#eureka:
+#  instance:
+#    hostname: registry
+##    使用主机名发现
+#    prefer-ip-address: false
+#    metadata-map:
+#      user.name: user
+#      user.password: password
+#  client:
+#    service-url:
+#      defaultZone: http://user:${REGISTRY_SERVER_PASSWORD:password}@registry:8761/eureka/
 
 hystrix:
   command:
