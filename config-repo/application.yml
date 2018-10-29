@@ -31,21 +31,21 @@ spring:
       skip-pattern: "^org.*HystrixStreamTask$"
 
 monitor:
-  hostname: 123.233.240.221
+  hostname: monitor
   port: 8040
 
 auth-service:
-    hostname: 123.233.240.221
+    hostname: auth-service
     port: 5000
     contextPath: /uaa
 
 auth-client-mgr:
-  hostname: 123.233.240.221
+  hostname: auth-client-mgr
   port: 8083
   contextPath: /ui
 
 auth-client-server:
-  hostname: 123.233.240.221
+  hostname: auth-client-server
   port: 5003
   contextPath: /uas
 
@@ -53,12 +53,12 @@ config-center:
   user:
     name: user
     password: password
-  hostname: 123.233.240.221
+  hostname: config
   port: 8888
   test: test1
 
 gateway:
-  hostname: 123.233.240.221
+  hostname: gateway
   port: 8060
 
 #security:
