@@ -8,7 +8,7 @@ logging:
 # CAS服务地址
 cas:
   server:
-    url: http://123.233.240.221:8081/cas
+    url: http://192.168.50.254:8081/cas
     # CAS服务登录地址
     login_url: ${cas.server.url}/login
     # CAS服务登出地址
