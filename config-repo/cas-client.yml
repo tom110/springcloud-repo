@@ -49,7 +49,7 @@ spring:
       ddl-auto: update
 
 token:
-  v: bearer 4830c2f5-4d08-44c2-8c04-68f7578ea4dd
+  v: bearer b5dfd6bc-705d-47fc-a24b-d4edd607e443
 
 security:
 #  user:
